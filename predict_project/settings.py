@@ -87,6 +87,8 @@ WSGI_APPLICATION = 'predict_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {}
+
 DATABASES = {
     'default': dj_database_url.config( # Feel free to alter this value to suit your needs.
          default='postgres://predict_system_user:3ngtr4fWshf5muJzChgMzy6S7b0dQzDe@dpg-chfpiqu7avjbbjoagq9g-a/predict_system',        conn_max_age=600    )

@@ -58,7 +58,7 @@
           <h3>Patient's Biodata</h3>
 
 
-          <form action="{% url 'predict_app:result' %}" method="post">
+          <form action="{% url 'predict_app:result' %}" method="post" style="margin-bottom: 200px;">
             {% csrf_token %}
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -160,7 +160,7 @@
               <input name="ca"  min="0" max="3" type="number" step="0.1" required class="form-control" id="inputAddress2" placeholder="Ca">
             </div>
 
-            <div class="form-group">
+            <div class="form-group" >
               <label for="inputAddress2"> Thal  3 = normal; 6 = fixed defect; 7 = reversible defect </label>
               <input name="thal"  min="0" max="7" type="number" step="0.1" required class="form-control" id="inputAddress2" placeholder="Thal">
             </div>
